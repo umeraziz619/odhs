@@ -6,6 +6,7 @@ const electricianSchema = new Schema({
   description: { type: String, required: true },
   userId: { type: Schema.Types.ObjectId, ref: "User", required: true },
   type: { type: String, required: true },
+  assignedTo: { type: String, required: true },
   username: { type: String, required: true },
   email: { type: String, required: true },
   phoneNumber: { type: String, required: true },
